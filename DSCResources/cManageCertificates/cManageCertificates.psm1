@@ -88,6 +88,11 @@ FUNCTION Set-TargetResource
     {
         Get-ChildItem -Path "Cert:\$Storetype\$Store" | Where-Object {$_.Thumbprint -eq $thumbprint} | Remove-Item -Force
     }
+
+    if ($Reboot)
+    {
+        $global:DSCMachineStatus = 1
+    }
 }
 
 
