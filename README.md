@@ -21,3 +21,17 @@ Valid roles are "TrustedPublisher", "ClientAuthIssuer", "Remote Desktop", "Root"
 *   **Ensure**: Value to make sure a certificate is or is not available on the store of the server.
 
 *   **Reboot**: BOOLEAN - If set to $true, will set the DSC Reboot flag when completed.
+
+## Versions
+
+### 1.0.1.5
+
+* Minor bugfixes
+
+### 1.0.1.0
+
+* Added additional storetypes and stores to **cManageCertificates**
+
+### 1.0.0.0
+
+* Created **cManageCertificates** resource
